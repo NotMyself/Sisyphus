@@ -13,7 +13,7 @@ Keeps rolling that rock uphill on schedule.
 6. Under the `(localdb)\MSSQLLocalDB` node, right click Databases and select `Add New Database`.
 7. Set Database Name to `Sisyphus` and click `OK`.
 8. Hit `F5` to start the service as a console application.
-9. You should now be able to browse to [http://localhost:8080](http://localhost:80800) to see the Hangfire Dashboard.
+9. You should now be able to browse to [http://localhost:8080](http://localhost:8080) to see the Hangfire Dashboard.
 
 ### Creating a New Job Project
 
@@ -33,7 +33,7 @@ Keeps rolling that rock uphill on schedule.
     - AssemblyDescription
     - Guid
 11. Right click the Solution and select Manage Nuget Packages for Solution.
-12. You may be prompted for credentails for the Hanfire nuget feed, they can be found in [nuget.config](nuget.config).
+12. You may be prompted for credentails for the Hanfire nuget feed, they can be found in [NuGet.config](/NuGet.config?raw=true).
 13. Add NuGet references to the following pacakges to your project using the installed tab of the Nuget Manager:
     - Autofac
     - Hangfire.Pro
@@ -64,16 +64,20 @@ Keeps rolling that rock uphill on schedule.
 2. Inherit from the `Module` base class in `Autofac`.
 3. Override the `Load` method from the `Module` base class.
 4. Using the `ContainerBuilder` register each of your jobs as `self`, `IBackgroundJob` and `IBackgroundJobScheduler`
+
     ```csharp
     builder.RegisterType<ExampleJob>()
                 .AsSelf()
                 .As<IBackgroundJob>()
                 .As<IBackgroundJobScheduler>();
    ```
+   
 5. In the Sisyphus.Service project, open the App.config.
 6. In the `autofac\modules` section add a weak assembly reference to your module.
+
    ```xml
    <module type="Sisyphus.Jobs.Example.ExampleModule, Sisyphus.Jobs.Example" />
    ```
+   
 7. Build the Solution and Run.
 8. You should now see your job listed on the Hangfire Dashboard.
