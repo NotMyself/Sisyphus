@@ -3,6 +3,13 @@ Keeps rolling that rock uphill on schedule.
 
 ![Sisyphus](/docs/images/sisyphus_wide.jpg?raw=true "Sisyphus")
 
+## TOC
+
+ - [Getting Started](#getting-started)
+ - [Creating a New Job Project](#creating-a-new-job-project)
+ - [Implementing a Job](#implementing-a-job)
+ - [Registering a Job in Sisyphus.Service](#registering-a-job-in-sisyphusservice)
+
 ### Getting Started
 
 1. Clone the repository: `git clone https://github.com/NotMyself/Sisyphus.git`.
