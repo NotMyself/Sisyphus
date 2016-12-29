@@ -6,6 +6,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sisyphus.Service", "src\Sisyphus.Service\Sisyphus.Service.csproj", "{7D07BE70-30D9-4299-B675-F607DD59CEB7}"
 	ProjectSection(ProjectDependencies) = postProject
 		{1FA730B1-2847-47B8-A1BC-BC96DD54704F} = {1FA730B1-2847-47B8-A1BC-BC96DD54704F}
+		{A5BE0EEE-E565-40B7-8C08-BD599AFE22FF} = {A5BE0EEE-E565-40B7-8C08-BD599AFE22FF}
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Jobs", "Jobs", "{42F18C67-1C74-420F-BD8E-EB2325DE00BE}"
@@ -21,6 +22,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		LICENSE = LICENSE
 		readme.md = readme.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sisyphus.Jobs.Example", "src\Sisyphus.Jobs.Example\Sisyphus.Jobs.Example.csproj", "{A5BE0EEE-E565-40B7-8C08-BD599AFE22FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -40,11 +43,16 @@ Global
 		{4333B4E0-90B5-4C9D-A5C4-24BB57142163}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4333B4E0-90B5-4C9D-A5C4-24BB57142163}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4333B4E0-90B5-4C9D-A5C4-24BB57142163}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5BE0EEE-E565-40B7-8C08-BD599AFE22FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5BE0EEE-E565-40B7-8C08-BD599AFE22FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5BE0EEE-E565-40B7-8C08-BD599AFE22FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5BE0EEE-E565-40B7-8C08-BD599AFE22FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{1FA730B1-2847-47B8-A1BC-BC96DD54704F} = {42F18C67-1C74-420F-BD8E-EB2325DE00BE}
+		{A5BE0EEE-E565-40B7-8C08-BD599AFE22FF} = {42F18C67-1C74-420F-BD8E-EB2325DE00BE}
 	EndGlobalSection
 EndGlobal
