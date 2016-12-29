@@ -14,7 +14,7 @@ namespace Sisyphus.Service
         public Service(IContainer container)
         {
             _container = container;
-            GlobalConfiguration.Configuration.UseSqlServerStorage("Default");
+            GlobalConfiguration.Configuration.UseSqlServerStorage("JobStorage");
             GlobalConfiguration.Configuration.UseAutofacActivator(_container, false);
         }
         public void Start()
