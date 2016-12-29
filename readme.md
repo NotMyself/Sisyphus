@@ -47,3 +47,33 @@ Keeps rolling that rock uphill on schedule.
     ![Add Project Dependeices](/docs/images/add_project_dependecies.PNG?raw=true "Add Project Dependecies")
 18. Build the Solution.
 19. Ensure your new project's built assembly is located in the `bin` directory for the Sisyphus.Service project.
+
+### Implementing a Job
+
+1. Your new job project should have a Class1.cs, open it.
+2. Implement the following interfaces found in `Sisyphus.Core`:
+   - **IBackgroundJob** - implements the asyncronous `Task` to be run
+   - **IBackgroundJobSchedule** - implements the schedule to run the Task
+   - **IBackgroundJobScheduler** - implements the scheduling action
+3. Rename the `Class1` class to something appropreate for your job as well as the `Class1.cs` file.
+
+### Registering a Job in Sisyphus.Service
+
+1. Add a new class named `*JobName*Module` where JobName is the name of your job or the collection of jobs.
+   - It should match the name of your project.
+2. Inherit from the `Module` base class in `Autofac`.
+3. Override the `Load` method from the `Module` base class.
+4. Using the `ContainerBuilder` register each of your jobs as `self`, `IBackgroundJob` and `IBackgroundJobScheduler`
+    ```csharp
+    builder.RegisterType<ExampleJob>()
+                .AsSelf()
+                .As<IBackgroundJob>()
+                .As<IBackgroundJobScheduler>();
+   ```
+5. In the Sisyphus.Service project, open the App.config.
+6. In the `autofac\modules` section add a weak assembly reference to your module.
+   ```xml
+   <module type="Sisyphus.Jobs.Example.ExampleModule, Sisyphus.Jobs.Example" />
+   ```
+7. Build the Solution and Run.
+8. You should now see your job listed on the Hangfire Dashboard.
