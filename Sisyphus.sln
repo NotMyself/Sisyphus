@@ -15,15 +15,22 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sisyphus.Jobs.HealthCheck",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sisyphus.Core", "src\Sisyphus.Core\Sisyphus.Core.csproj", "{4333B4E0-90B5-4C9D-A5C4-24BB57142163}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{AA9F6F80-BA5E-4EB6-9D99-9A1E3DAE1862}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{AA9F6F80-BA5E-4EB6-9D99-9A1E3DAE1862}"
 	ProjectSection(SolutionItems) = preProject
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
 		LICENSE = LICENSE
+		NuGet.config = NuGet.config
 		readme.md = readme.md
+		src\SolutionInfo.cs = src\SolutionInfo.cs
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sisyphus.Jobs.Example", "src\Sisyphus.Jobs.Example\Sisyphus.Jobs.Example.csproj", "{A5BE0EEE-E565-40B7-8C08-BD599AFE22FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{00EA5932-0DFC-480C-90B2-97A5C249234A}"
+	ProjectSection(SolutionItems) = preProject
+		scripts\register_uri.ps1 = scripts\register_uri.ps1
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,5 +61,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{1FA730B1-2847-47B8-A1BC-BC96DD54704F} = {42F18C67-1C74-420F-BD8E-EB2325DE00BE}
 		{A5BE0EEE-E565-40B7-8C08-BD599AFE22FF} = {42F18C67-1C74-420F-BD8E-EB2325DE00BE}
+		{00EA5932-0DFC-480C-90B2-97A5C249234A} = {AA9F6F80-BA5E-4EB6-9D99-9A1E3DAE1862}
 	EndGlobalSection
 EndGlobal
