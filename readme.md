@@ -37,10 +37,12 @@ Keeps rolling that rock uphill on schedule.
 3. Select `Class Library` from the `Visual C#` section.
 4. Name your library `Sisyphus.Jobs.*JobName*` where JobName is the name of a single job or collection of jobs.
 5. Set the Location to the `src` folder located at the root of the repository.
+
     ![Add New Project](/docs/images/add_new_project.PNG?raw=true "Add New Project")
 6. Right click your new project and select Add > Existing Item.
 7. Navigate to the `src` folder and select the `SolutionInfo.cs` file.
 8. From the `Add` button drop down menu, select `Add As Link`.
+
     ![Add As Link](/docs/images/add_solution_info.PNG?raw=true "Add As Link")
 9. Drag the linked `SolutionInfo.cs` into the `Properties` folder.
 10. Open the `AssemblyInfo.cs` file in the Properties folder and remove all attrubutes except these:
@@ -59,6 +61,7 @@ Keeps rolling that rock uphill on schedule.
     - Release = ..\Sisyphus.Service\bin\Release\ 
 16. Right click the Solution and select `Project Dependecies`.
 17. For the project `Sisyphus.Service` add a check next to your new project.
+
     ![Add Project Dependeices](/docs/images/add_project_dependecies.PNG?raw=true "Add Project Dependecies")
 18. Build the Solution.
 19. Ensure your new project's built assembly is located in the `bin` directory for the Sisyphus.Service project.
