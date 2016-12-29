@@ -1,7 +1,7 @@
 # Sisyphus
 Keeps rolling that rock uphill on schedule.
 
-![Sisyphus](/docs/images/sisyphus.jpg?raw=true "Sisyphus")
+![Sisyphus](/docs/images/sisyphus_wide.jpg?raw=true "Sisyphus")
 
 ### Getting Started
 
