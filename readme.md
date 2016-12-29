@@ -25,10 +25,10 @@ Keeps rolling that rock uphill on schedule.
 
 ### External Dependencies
 
-1. [Autofac](https://autofac.org/)
-2. [TopShelf](http://topshelf-project.com/)
-3. [Hangfire](http://hangfire.io/)
-4. [Hangfire.Pro](http://hangfire.io/pro/)
+1. [Autofac](https://autofac.org/) - Dependency Intection framework used for service and plugin registration
+2. [TopShelf](http://topshelf-project.com/) - Service host framework used to host in console or windows service
+3. [Hangfire](http://hangfire.io/) - Background Job Processing framework used to schedule and execute long running jobs
+4. [Hangfire.Pro](http://hangfire.io/pro/) - Extensions to Hangfire that add several advanced job type scenarios
 
 ### Creating a New Job Project
 
