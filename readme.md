@@ -6,6 +6,7 @@ Keeps rolling that rock uphill on schedule.
 ## TOC
 
  - [Getting Started](#getting-started)
+ - [External Dependencies](#external-dependencies)
  - [Creating a New Job Project](#creating-a-new-job-project)
  - [Implementing a Job](#implementing-a-job)
  - [Registering a Job in Sisyphus.Service](#registering-a-job-in-sisyphusservice)
@@ -21,6 +22,13 @@ Keeps rolling that rock uphill on schedule.
 7. Set Database Name to `Sisyphus` and click `OK`.
 8. Hit `F5` to start the service as a console application.
 9. You should now be able to browse to [http://localhost:8080](http://localhost:8080) to see the Hangfire Dashboard.
+
+### External Dependencies
+
+1. [Autofac](https://autofac.org/)
+2. [TopShelf](http://topshelf-project.com/)
+3. [Hangfire](http://hangfire.io/)
+4. [Hangfire.Pro](http://hangfire.io/pro/)
 
 ### Creating a New Job Project
 
