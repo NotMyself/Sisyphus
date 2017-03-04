@@ -10,7 +10,7 @@ namespace Sisyphus.Jobs.Example
 
         public string GetSchedule()
         {
-            return Cron.Hourly();
+            return Cron.Minutely();
         }
 
         public void Schedule()
